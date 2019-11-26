@@ -7,14 +7,20 @@
 </head>
 
 <body>
-<h2>Configuring VPN Check and Act</h2>
-
-<p>There are three steps to configuring VPN Check and Act. Please note that all entries are case-sensitive.</p>
+<h1>VPN Check and Act Instructions</h1>
+<ul>
+<li><h3> <A href="#Configuraron">Configuration</A></h3>
+<li><h3> <A href="#Check">Application Pre-Launch VPN Check</A></h3>
+</ul>
+<a id="Configuration"></a>
+<h2>Configuration</h2>
+<p>There are three steps to configuring VPN Check and Act.</p>
 <ol>
 <li>Enter the names of the VPNs to be monitored.
 <li>Enter the tests to determine if the network traffic is using a VPN. This step is optional, but if it is not configured, whilst VPN Check and Act will still be able to detect if a VPN is up, it will not be able to determine whether the VPN is operating correctly.
 <li>Enter the actions to take if the VPN fails. This will be either killing specific applications or the entire network.
 </ol>
+<p>Please note that all entries are case-sensitive. (E.g. entering goldenVPN will not detect GoldenVPN.)</p>
 <p>
 The three steps correspond to the three text boxes along the top half of the VPN Check and Act user interface. And each text box has three icons with the following functions.
 </p>
@@ -72,12 +78,13 @@ The three steps correspond to the three text boxes along the top half of the VPN
 <li>All entries are case-sensitive.
 <li>Some further settings/actions are available via the cog button (#12). The most important one being the purchase button!
 </ul>
-<h2>Check VPN Is Up Before Running An Application</h2>
-<p>There may be some applications that should be run only if a VPN is up. To enable this functionality, drag and drop the required application on to VPN Check and Act's main window (though not into a text box). This will create a new shortcut called VPNCALaunch on the Windows desktop. Double clicking the shortcut will initiate a check on whether the VPN is up and if it is up, the application will be launched, and if not up, a user prompt will be shown.
+<a id="Check"></a>
+<h2>Application Pre-Launch VPN Check</h2>
+<p>There may be some applications that should be run only if a VPN is up. To enable this functionality, drag and drop the required application onto VPN Check and Act's main window (though not onto a text box). This will create a new shortcut called "VPNCA" + application's filename on the Windows desktop. Double clicking the shortcut will initiate a check on whether the VPN is up and if it is up, the application will be launched, and if not up, a user prompt will be shown.
 </p>
 <p>You will probably want to rename the shortcut to something more meaningful. Also you may wish to change the shortcut's icon.
 </p>
-<p>Drag and dropping multiple applications will create a shortcut that launches all the applications.
+<p>Drag and dropping multiple applications will create a single shortcut that launches all the dropped applications. The shortcut's filename and icon will come from the first application in the dropped group.
 </p>
 </body>
 </html>

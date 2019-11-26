@@ -22,10 +22,10 @@
 </ol>
 <p>Please note that all entries are case-sensitive. (E.g. entering goldenVPN will not detect GoldenVPN.)</p>
 <p>
-The three steps correspond to the three text boxes along the top half of the VPN Check and Act user interface. And each text box has three icons with the following functions.
+The three steps correspond to the three text boxes along the top half of the VPN Check and Act user interface. Each text box has accompanying three icons with the following functions.
 </p>
 <ul>
-<li><i class="fa fa-question-circle"></i> Provides help for the setting
+<li><i class="fa fa-question-circle"></i> Displays help for the setting
 <li><i class="fa fa-play"></i> Tests and activates the setting
 <li><i class="fas fa-eye"></i> Displays relevant information to be used with the setting
 </ul>
@@ -49,10 +49,10 @@ The three steps correspond to the three text boxes along the top half of the VPN
 </p>
 <ul>
 <li>Disconnect the VPN (the border becomes red) and click <i class="fas fa-eye"></i> (#6).
-<li>The log will display the current http headers coming from your computer as viewed by an external observer. When a VPN is not operational, the headers will present the computer's true geographic values but when a VPN is operational these values will describe the active VPN server's information.
-<li>Enter one or more tests that are <b>true</b> when the PVN is <b>not</b> operational. Some obvious tests such as using the value of the city don't always work well. You may find that, the city changes even when connecting from the same location. Testing the country would be safer, but then it negates using a VPN that is based in your home country - which may not be a problem. A test that does seem to work well is the name of the ISP, as in the above example. Copy the desired test(s) into the box (#7).
+<li>The log will display the current http headers coming from your computer as viewed by an external observer. When a VPN is not operational, the headers will present the computer's true geographic values but when a VPN is operational these values will be from the active VPN server.
+<li>Enter one or more tests that are <b>true</b> when the VPN is <b>not</b> operational. Some obvious tests such as using the value of the city don't always work well. You may find that, the city changes even when connecting from the same location. Testing the country would be safer, but then it negates using a VPN that is based in your home country - which may, or may not, not be a problem for you. A test that usually works well is the name of the ISP, as in the above example. Copy the desired test(s) into the box (#7).
 <li>Click <i class="fa fa-play"></i> (#5) and the log should state that the VPN is down because one of the tests is true. (See the first part of the log in the screenshot below.)
-<li>Start the VPN and click <i class="fa fa-play"></i> again. The result should be as shown below with the log stating all tests were not true and hence the PVN is up.
+<li>Start the VPN and click <i class="fa fa-play"></i> again. The result should be the border turns green and the log states that all tests were not true and hence the VPN is up.
 </ul>
 <p>
 <img style="margin:20px 20px;border:2px solid black;width:50%" src="Screenshots/screenshotA6.png" alt="Screenshot6" >
@@ -62,11 +62,11 @@ The three steps correspond to the three text boxes along the top half of the VPN
 <img style="margin:20px 20px;border:2px solid black;width:50%" src="Screenshots/screenshotA7.png" alt="Screenshot7" >
 </p>
 <ul>
-<li>If the required action for when the VPN goes down is to just kill the entire network, check the network box (#11).
-<li>If the requirement is to only terminate certain applications, then the corresponding <b>process</b> names need to be entered into the box (#10). The process name is usually similar, but often not identical, to the application name. To obtain the process name, start the application (after starting the VPN if it is very sensitive) and click <i class="fas fa-eye"></i> (#9).
+<li>If the required action for when the VPN goes down is to stop all network traffic, check the network box (#11).
+<li>However, if the requirement is to only terminate certain applications, then the corresponding <b>process</b> names need to be entered into the box (#10). The process name is usually similar, but often not identical, to the application name. To obtain the process name, start the application (after starting the VPN if it is very sensitive) and click <i class="fas fa-eye"></i> (#9).
 <li>The log will show the running processes. (There will be quite a few.) Find the process that corresponds to the application that should be terminated when the VPN fails.
 <li>Enter the process name in the box (#10).
-<li>Click <i class="fa fa-play"></i> (#8) and if the application is still running, the below warning will be shown. If you are happy with the warning, click the Yes button and confirm the application has been terminated. If it hasn't been terminated, probably the wrong process name was selected. (Try to find the correct process name and try again.) Obviously, in normal operation, the warning will not be shown but rather the application will be quietly terminated.
+<li>Click <i class="fa fa-play"></i> (#8) and if the application is still running, the below warning will be shown. If you are happy with the warning, click the Yes button and confirm the application has been terminated. If it hasn't been terminated, probably the wrong process name was selected. (Try to find the correct process name and try again.) Obviously, in normal operation, the warning will not be shown but rather the application will be immediately terminated.
 </ul>
 <p>
 <img style="margin:20px 20px;border:2px solid black;width:50%" src="Screenshots/screenshotA8.png" alt="Screenshot8" >
@@ -76,7 +76,7 @@ The three steps correspond to the three text boxes along the top half of the VPN
 <li>VPN Check and Act should now be operational. To test, bring up and down the VPNs, and make sure the required applications are being terminated.
 <li>Each of the boxes #3, #7 and #10 can have multiple entries but only one entry per line. Whenever, you make a change to a box contents, click the corresponding <i class="fa fa-play"></i> button (it should be pulsing) to activate the change.
 <li>All entries are case-sensitive.
-<li>Some further settings/actions are available via the cog button (#12). The most important one being the purchase button!
+<li>Some further settings/actions are available via the cog button (#12). The most important one being the purchase button! (If the trial period has ended, and hence you can't access the purchase button, please purchase via the Microsoft Store.)
 </ul>
 <a id="Check"></a>
 <h2>Application Pre-Launch VPN Check</h2>

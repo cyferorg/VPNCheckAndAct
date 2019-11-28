@@ -20,7 +20,7 @@
 <li>Enter the tests to determine if the network traffic is using a VPN. This step is optional, but if it is not configured, whilst VPN Check and Act will still be able to detect if a VPN is up, it will not be able to determine whether the VPN is operating correctly.
 <li>Enter the actions to take if the VPN fails. This will be either killing specific applications or the entire network.
 </ol>
-<p>Please note that all entries are case-sensitive. (E.g. entering goldenVPN will not detect GoldenVPN.)</p>
+<p>Please note that all entries are case-insensitive. (E.g. entering goldenVPN will detect GoldenVPN.)</p>
 <p>
 The three steps correspond to the three text boxes along the top half of the VPN Check and Act user interface. Each text box has accompanying three icons with the following functions.
 </p>
@@ -75,11 +75,11 @@ The three steps correspond to the three text boxes along the top half of the VPN
 <ul>
 <li>VPN Check and Act should now be operational. To test, bring up and down the VPNs, and make sure the required applications are being terminated.
 <li>Each of the boxes #3, #7 and #10 can have multiple entries but only one entry per line. Whenever, you make a change to a box contents, click the corresponding <i class="fa fa-play"></i> button (it should be pulsing) to activate the change.
-<li>All entries are case-sensitive.
 <li>Some further settings/actions are available via the cog button (#12). The most important one being the purchase button! (If the trial period has ended, and hence you can't access the purchase button, please purchase via the Microsoft Store.)
 </ul>
 <a id="Check"></a>
 <h2>Application Pre-Launch VPN Check</h2>
+<p>(This functionality is in the next version of VPN Check and Act which will be released in the next couple of days - approx. 1st Dec 2019.)</p>
 <p>There may be some applications that should be run only if a VPN is up. To enable this functionality, drag and drop the required application onto VPN Check and Act's main window (though not onto a text box). This will create a new shortcut called "VPNCA" + application's filename on the Windows desktop. Double clicking the shortcut will initiate a check on whether the VPN is up and if it is up, the application will be launched, and if not up, a user prompt will be shown.
 </p>
 <p>You will probably want to rename the shortcut to something more meaningful. Also you may wish to change the shortcut's icon.

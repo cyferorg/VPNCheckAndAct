@@ -11,6 +11,7 @@
 <ul>
 <li><h3> <A href="#Configuraron">Configuration</A></h3>
 <li><h3> <A href="#Check">Application Pre-Launch VPN Check</A></h3>
+<li><h3> <A href="#Settings">Settings</A></h3>
 </ul>
 <a id="Configuration"></a>
 <h2>Configuration</h2>
@@ -93,5 +94,24 @@ The three steps correspond to the three text boxes along the top half of the <b>
 </p>
 <p>Drag and dropping multiple applications will create a single shortcut that launches all the dropped applications. The shortcut's filename and icon will come from the first application in the dropped group.
 </p>
+<a id="Settings"></a>
+<h2>Settings</h2>
+<p>The following can be found on the settings page which is accessible via the cog button.</p>
+<ul>
+<li>Mode (theme)
+<p>Whether to use Dark or Light mode for the user interface. Choosing 'Window setting' will reflect the Windows' mode setting.</p>
+<li>Save VPN status changes to Windows Notification Center
+<p>Notifications (e.g. VPN Up) will be saved to the Windows Notification Center (usually accessible by swiping left from Windows' right edge. If not checked, notifications will be visible in the Center for a few seconds and then removed.</p>
+<li>Hide from Windows taskbar when minimized
+<p>When minimized, VPN Check and Act will only be visible in the Windows Notification Area (also called the System Tray) usually located at the bottom right of the desktop.</p>
+<li>Mute notification sounds
+<p>Mute all sounds (typically occur when the VPN goes up or down) produced by VPN Check and Act.</p>
+<li>Brighten the log on updates
+<p>Add a brighten animation to the log window when it is updated.</p>
+<li>If tests timeout, assume VPN is down
+<p>If, when running the tests that check the correct operation of the active VPN, the tests time-out or fail to run then assume the VPN is down.</p>
+<li>Extra logging
+<p>Log additional (not directly relevant to the operation of VPN Check and Act) events to the log. Currently, the only additional event is session lock/unlock though additional ones may be added in future releases.</p>
+</ul>
 </body>
 </html>

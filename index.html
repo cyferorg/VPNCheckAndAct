@@ -99,6 +99,14 @@ The three steps correspond to the three text boxes along the top half of the <b>
 </p>
 <p>Drag and dropping multiple applications will create a single shortcut that launches all the dropped applications. The shortcut's filename and icon will come from the first application in the dropped group.
 </p>
+<p>When the VPN is down, you will be asked whether you wish to launch the app anyway. If you don't want to be prompted but instead the app is just not launched, add "-noprompt" to the shortcut's target. Open up the shortcut's properties and append "-noprompt" ro the target, e.g.:
+</p>
+C:\WINDOWS\system32\cmd.exe /c start shell:appsfolder\Cyfer.VPNCheckAndActTest_35z2bs1qi5kj2!App "C:\Program Files\qBittorrent\qbittorrent.exe"
+<p>
+</p>
+<p>
+C:\WINDOWS\system32\cmd.exe /c start shell:appsfolder\Cyfer.VPNCheckAndActTest_35z2bs1qi5kj2!App "C:\Program Files\qBittorrent\qbittorrent.exe" -noprompt
+</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fR2dSC63KN8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <a id="Settings"></a>
 <h2>Settings</h2>
